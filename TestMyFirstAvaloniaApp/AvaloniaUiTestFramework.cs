@@ -1,5 +1,6 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
 using MyFirstAvaloniaApp.Models;
+using MyFirstAvaloniaApp.ViewModels;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -256,6 +257,33 @@ namespace Tests
             var expected = new RomanNumber(28);
 
             Assert.AreEqual(0, expected.CompareTo(obj * obj2));
+        }
+
+
+    }
+    [TestClass()]
+    public class VisualTest
+    {
+        [TestMethod()]
+        public void VisualTest1()
+        {
+            var obj = new MainWindowViewModel();
+            var test = 0;
+            obj.Set_text("test_text");
+            obj.Clear();
+            if (obj.Get_text() == "") test = 1;
+            Assert.AreEqual(1, test);
+        }
+        [TestMethod()]
+        public void VisualTest2()
+        {
+            var obj = new MainWindowViewModel();
+            obj.MainText = "";
+            string text = "*";
+            var test = 0;
+            obj.WriteChar(text);
+            if (obj.MainText == "*") test = 1;
+            Assert.AreEqual(1, test);
         }
     }
 }
