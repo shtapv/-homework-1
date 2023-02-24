@@ -1,9 +1,9 @@
 using Avalonia.Controls;
 using Avalonia.Controls.Templates;
-using MyFirstAvaloniaApp.ViewModels;
+using RomanNumbersCalculator.ViewModels;
 using System;
 
-namespace MyFirstAvaloniaApp
+namespace RomanNumbersCalculator
 {
     public class ViewLocator : IDataTemplate
     {

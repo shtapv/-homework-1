@@ -1,10 +1,10 @@
 using Avalonia;
 using Avalonia.Controls.ApplicationLifetimes;
 using Avalonia.Markup.Xaml;
-using MyFirstAvaloniaApp.ViewModels;
-using MyFirstAvaloniaApp.Views;
+using RomanNumbersCalculator.ViewModels;
+using RomanNumbersCalculator.Views;
 
-namespace MyFirstAvaloniaApp
+namespace RomanNumbersCalculator
 {
     public partial class App : Application
     {
